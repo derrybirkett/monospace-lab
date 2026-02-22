@@ -18,6 +18,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
 ---
 
 <article class="article">
+  <a href="/" class="back-link">&larr; Back</a>
   <header class="article-header">
     <Heading as="h1">{title}</Heading>
     <p class="article-meta">
@@ -30,6 +31,19 @@ const formattedDate = date.toLocaleDateString("en-US", {
 </article>
 
 <style>
+  .back-link {
+    font-family: var(--font-heading);
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: var(--space-lg);
+  }
+
+  .back-link:hover {
+    color: var(--color-text);
+  }
+
   .article {
     max-width: var(--width-content);
   }
