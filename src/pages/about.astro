@@ -1,25 +1,43 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Layout from "../components/Layout.astro";
+import Heading from "../components/Heading.astro";
+import Prose from "../components/Prose.astro";
 ---
 
-<Layout
-	title="About"
-	description="About Monospace Lab and Derry Birkett"
-	pubDate={new Date('February 21 2026')}
->
-	<p>
-		Monospace Lab is where I document what I build. Infrastructure, automation,
-		self-hosted systems, and the decisions behind them.
-	</p>
-
-	<p>
-		I’m Derry Birkett — based in Barcelona, building systems that are sovereign,
-		resilient, and intentional. Currently working on HomeCloud (a self-healing
-		private cloud on a Mac mini) and PIP (an agentic development platform).
-	</p>
-
-	<p>
-		Everything here is real — real projects, real trade-offs, real infrastructure.
-		No tutorials. No theory. Just what actually works.
-	</p>
+<Layout title="About — Monospace.Labs" description="About Monospace.Labs.">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Monospace.Labs",
+    "description": "About Monospace.Labs.",
+    "url": new URL("/about", Astro.site).href,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Monospace.Labs",
+      "url": Astro.site?.href,
+    },
+  })} />
+  <section class="about">
+    <Heading as="h1">About</Heading>
+    <Prose>
+      <p>
+        Monospace.Labs is where I document what I build — from private cloud
+        infrastructure to agentic development systems. Real projects, real
+        decisions, real trade-offs.
+      </p>
+      <p>
+        Built by <a href="https://github.com/derrybirkett">Derry Birkett</a>.
+        Infrastructure, automation, and self-hosted systems.
+      </p>
+      <p>
+        No newsletters, no pop-ups, no tracking. Just writing.
+      </p>
+    </Prose>
+  </section>
 </Layout>
+
+<style>
+  .about {
+    max-width: var(--width-content);
+  }
+</style>

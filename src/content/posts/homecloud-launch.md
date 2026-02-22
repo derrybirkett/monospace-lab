@@ -1,7 +1,7 @@
 ---
-title: 'Building HomeCloud: From Hobby Setup to Self-Healing Private Cloud in One Night'
-description: 'How I turned a Mac mini in Barcelona into a self-healing private cloud with Tailscale, Docker, and infrastructure-as-code.'
-pubDate: 'Feb 21 2026'
+title: "Building HomeCloud: From Hobby Setup to Self-Healing Private Cloud in One Night"
+description: "How I turned a Mac mini in Barcelona into a self-healing private cloud with Tailscale, Docker, and infrastructure-as-code."
+date: 2026-02-21
 ---
 
 I've been running a Mac mini in Barcelona as a remote server for a while. Parsec for remote desktop, Sunshine for streaming, Docker for services, Tailscale for secure access. It worked — until it didn't.
