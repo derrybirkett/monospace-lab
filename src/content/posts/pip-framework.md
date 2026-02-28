@@ -14,7 +14,7 @@ I've been here before — the itch to extract a pattern. Remember when I couldn'
 
 ## What It Actually Is
 
-`.pip` stands for **Project Intelligence & Process**. It's a Git submodule you drop into any project. Not a runtime, not a CLI framework — a knowledge layer.
+`.pip` stands for **Project Intelligence & Process**. It's a Git submodule you drop into any project. A knowledge layer.
 
 Mission docs. Delivery methods. Agent roles. Infrastructure scaffolds. A universal entrypoint that works with ChatGPT, Claude, Cursor, Warp, n8n — basically whatever AI tool you’re vibing with this week. All versioned alongside your code.
 
